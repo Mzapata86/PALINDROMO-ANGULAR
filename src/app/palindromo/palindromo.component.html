@@ -1,0 +1,10 @@
+<div>
+    <h2>INGRESE LA PALABRA</h2>
+    <input [(ngModel)]="inputText" placeholder="ingrese texto o numero" />
+    <button (click)="checkPalindromo()">Check</button>
+  
+    <div *ngIf = "isPalindromo !== null">
+      <p *ngIf = "isPalindromo"> la palabra ingresada {{inputText}}  SI es Palindromo</p>
+      <p *ngIf = "!isPalindromo">la palabra ingresada {{inputText}} NO es Palindromo</p>
+    </div>
+  </div>
